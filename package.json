@@ -1,0 +1,21 @@
+{
+  "name": "cookie-js",
+  "version": "1.0.0",
+  "description": "Document cookie management library inspired by CodeIgniter Cookie",
+  "main": "dist/cookie.js",
+  "module": "src/cookie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arxcode40/cookie-js.git"
+  },
+  "keywords": ["cookie", "http cookie", "document cookie", "cookie management", "codeigniter cookie"],
+  "author": "Arya Putra Sadewa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arxcode40/cookie-js/issues"
+  },
+  "homepage": "https://github.com/arxcode40/cookie-js#readme"
+}
