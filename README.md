@@ -18,15 +18,15 @@ cookie.set(name, value, options = {})
 #### Parameters
 - **name** (`string`) – Cookie name
 - **value** (`string`) – Cookie value
-- **options** (`object`) – Cookie options (Optional)
+- **options** (`object`) – Cookie options (optional)
   - **domain** (`string`) – Cookie domain (usually: .yourdomain.com)
-  - **expire** (`number`) – Number of seconds until expiration. If set to 0 the cookie will only last as long as the browser is open
-  - **httpOnly** (`boolean`) – Whether to hide the cookie from JavaScript
+  - **expire** (`number`) – Number of seconds until expiration. If set to 0 the cookie will only last as long as the browser is open (default: 0)
+  - **httpOnly** (`boolean`) – Whether to hide the cookie from JavaScript (default: false)
   - **maxAge** (`number`) – Cookie maximum age
-  - **partitioned** (`boolean`) – Indicates that the cookie should be stored using partitioned storage.
-  - **path** (`string`) – Cookie path
+  - **partitioned** (`boolean`) – Indicates that the cookie should be stored using partitioned storage (default: false)
+  - **path** (`string`) – Cookie path (default: '/')
   - **sameSite** (`string`) – The value for the SameSite cookie parameter
-  - **secure** (`boolean`) – Whether to only send the cookie through HTTPS
+  - **secure** (`boolean`) – Whether to only send the cookie through HTTPS (default: false)
 #### Return type
 `void`
 
@@ -47,9 +47,9 @@ cookie.delete(name, options = {})
 ```
 #### Parameters
 - **name** (`string`) – Cookie name
-- **options** (`object`) – Cookie options (Optional)
+- **options** (`object`) – Cookie options (optional)
   - **domain** (`string`) – Cookie domain (usually: .yourdomain.com)
-  - **path** (`string`) – Cookie path
+  - **path** (`string`) – Cookie path (default: '/')
 #### Return type
 `void`
 
@@ -59,6 +59,6 @@ cookie.has(name, ?value = null)
 ```
 #### Parameters
 - **name** (`string`) – Cookie name
-- **value** (`string|null`) – Cookie value
+- **value** (`string|null`) – Cookie value (optional)
 #### Return type
 `boolean`
